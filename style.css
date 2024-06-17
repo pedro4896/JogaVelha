@@ -1,0 +1,69 @@
+body{
+    background-color: black;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    margin: 2% auto;
+}
+table{
+    margin: 1% auto;
+}
+
+tr{
+    border-width: 5px;
+}
+
+td{
+    color: black;
+    padding: 50px;
+    background-size: contain;
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    cursor: pointer;
+}
+
+.conteudo{
+    display: flex;
+    text-align: center;
+    width: 400px;
+    padding: 0px;
+    margin: auto;
+    font-size: 20px;
+    /*row|row-reverse|column|column-reverse*/
+    flex-direction: row; /*Define a direção do layout dos elementos*/
+    /*nowrap|wrap|wrap-reverse*/
+    flex-wrap: wrap;/*define como os elementos irão se manter dentro do container*/
+    /*flex-start|flex-end|center|space-between|space-around*/
+    justify-content: space-around; /*define o aliamento dos elementos (horizontal)*/
+}
+
+div.item{
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    /*Define a proporção de espaço ocupado por um item*/
+    flex-grow: 0;
+    /*Define a capacidade de redução de tamanho do item*/
+    flex-shrink: 1;
+    /*Define o tamanho inicial do flex item antes da distribuição do espaço restante*/
+    flex-basis: 200px;
+}
+
+.pontuacaoX,.pontuacaoO{
+    color: rebeccapurple;
+}
+
+.AdicionarX{
+    background-image: url("x.png");
+}
+
+.AdicionarO{
+    background-image: url("anel-circular.png");
+}
